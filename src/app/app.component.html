@@ -1,0 +1,51 @@
+
+<br><br>
+
+<app-markdown-parser></app-markdown-parser>
+
+
+<br><br>
+
+<!-- ============================= PEGANDO DATA ============================================= -->
+<button  (click)="testeData()"> PEGANDO DATA </button>
+  <div #pegandoData ></div>
+<!-- ============================= START PEGANDO DATA ============================================= -->
+<br>
+<!-- ============================= JavaScript Array sort() Method =============================== 
+https://www.w3schools.com/jsref/jsref_sort.asp  -->
+
+<button  (click)="sortTeste2()"> sort number </button>
+  <div #sort>{{points}}</div>
+<br>
+  <button  (click)="sortFruits2()"> sort number </button>
+  <div #sortFruits>{{fruits}}</div>
+
+<!-- ============================= JavaScript Array sort() Method =============================== -->
+
+
+<!-- 💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡 -->
+
+<!-- <button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+    <p>show = {{show}}</p>
+    <hr>
+    <div *ngIf="show; else elseBlock">This div would only be shown if "show" will be true</div>
+    <ng-template #elseBlock>Else this div will be shown</ng-template>
+    <br><br>
+    <button (click)="hidden = !hidden">{{hidden ? 'show' : 'hide'}}</button>
+    <p>hidden = {{hidden}}</p>
+    <hr>
+    <div [hidden]="hidden">This is another div using hidden attribute</div> -->
+    
+
+
+    <button (click)="show = !show">{{show ? 'Apagar' : 'Acender'}}</button>
+    <img  [src]="logo" [hidden]="show" >
+    <img  [src]="logo2"  *ngIf="show; else elseBlock">
+ 
+
+<!-- <div>
+    <img  [hidden]="!edited" [src]="logo" />
+    <img *ngIf="edited"  [src]="logo2" />
+</div> -->
+
+<!-- 💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡 -->
